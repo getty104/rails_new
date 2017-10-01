@@ -59,9 +59,12 @@ for option in $*; do
     --react)
       $tmp npm install --save redux
       $tmp npm install --save react-redux
+      $tmp npm install --save redux-thunk
       $tmp npm install --save-dev redux-devtools
       $tmp npm install --save material-ui
+      $tmp npm install --save react-router-dom
       $tmp npm install --save react-tap-event-plugin
+      $tmp npm install --save superagent
       $tmp rails webpacker:install:react
       mkdir ./app/javascript/packs/actions
       mkdir ./app/javascript/packs/components
